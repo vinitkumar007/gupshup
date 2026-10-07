@@ -11,7 +11,7 @@ export function addUser(id, name, room) {
   // same room me same naam dobara nahi chalega
   for (const u of onlineUsers.values()) {
     if (u.room === room && u.name.toLowerCase() === name.toLowerCase()) {
-      return { error: "Ye naam is room me pehle se hai" };
+      return { error: "this name is already in room " };
     }
   }
 

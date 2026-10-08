@@ -6,7 +6,7 @@ export function addUser(id, name, room) {
   name = name.trim();
   room = room.trim().toLowerCase();
 
-  if (!name || !room) return { error: "Naam aur room dono chahiye" };
+  if (!name || !room) return { error: "enter name and room id" };
 
   // same room me same naam dobara nahi chalega
   for (const u of onlineUsers.values()) {

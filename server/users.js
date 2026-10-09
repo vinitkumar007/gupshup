@@ -6,12 +6,12 @@ export function addUser(id, name, room) {
   name = name.trim();
   room = room.trim().toLowerCase();
 
-  if (!name || !room) return { error: "enter name and room id" };
+  if (!name || !room) return { error: "naam or room id dalo" };
 
   // same room me same naam dobara nahi chalega
   for (const u of onlineUsers.values()) {
     if (u.room === room && u.name.toLowerCase() === name.toLowerCase()) {
-      return { error: "this name is already in room " };
+      return { error: "this name is already in this room " };
     }
   }
 

@@ -4,7 +4,7 @@ import Join from "./Join.jsx";
 import Room from "./Room.jsx";
 
 export default function App() {
-  const [session, setSession] = useState(null); // { name, room }
+  const [session, setSession] = useState(null); // { name , room }
 
   function handleJoin(name, room, onError) {
     socket.emit("join", { name, room }, (res) => {

@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(cors());
 
-app.get("/", (req, res) => res.send("Gupshup server chal raha hai"));
+app.get("/", (req, res) => res.send("Gupshup server is running 😎"));
 
 const server = http.createServer(app);
 const io = new Server(server, {
